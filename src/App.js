@@ -17,7 +17,7 @@ const App = () => {
                     <div className='row mt-3'>
                         {
                             /* Add Budget component here */
-                            <div className='col-sm'>
+                            <div className='col-sm-6'>
                                 <Budget/>
                             </div>
                         }        
@@ -36,23 +36,9 @@ const App = () => {
                             </div>
                         }        
                        
-                        {
-                            /* Add ExpenseList component here */
-                            <div className='col-sm'>
-                                <ExpenseList />
-                            </div>
-                            
-                        }         
- 
-
-                        {
-                            /* Add AllocationForm component here under */
-                            <div className='col-sm'>
-                                <AllocationForm />
-                            </div>
-                        }        
-
-                </div>
+                    </div>
+                    <ExpenseList />
+                    <AllocationForm/>
             </div>
         </AppProvider>
     );
